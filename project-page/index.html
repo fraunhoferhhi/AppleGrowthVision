@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A new heterogeneous dataset for tasks on apple trees, like fruit detection, bbch classification, and orchard reconstruction by researchers at Fraunhofer Heinrich Hertz Institute HHI and Humboldt University of Berlin."
+    />
+    <meta property="og:title" content="AppleGrowthVision dataset" />
+    <meta property="og:description" content="A new heterogeneous dataset for tasks on apple trees, like fruit detection, bbch classification, and orchard reconstruction." />
+    <meta property="og:url" content="https://fraunhoferhhi.github.io/AppleGrowthVision/" />
+    <meta property="og:image" content="https://fraunhoferhhi.github.io/AppleGrowthVision/static/images/teaser.jpg" />
+    <meta property="og:image:width" content="1038" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="AppleGrowthVision" />
+    <meta name="twitter:description" content="A new heterogeneous dataset for tasks on apple trees, like fruit detection, bbch classification, and orchard reconstruction." />
+    <meta name="twitter:image" content="https://fraunhoferhhi.github.io/AppleGrowthVision/static/images/teaser.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="keywords"
+      content="AppleGrowthVision, 3D scene reconstruction, dataset, apple detection, BBCH classification, Fraunhofer Heinrich Hertz Institute, Humboldt University of Berlin, resource-constrained devices, fast web applications"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AppleGrowthVision Project Page</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/vidsplit_multi.js"></script>
+  </head>
+
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">AppleGrowthVision</h1>
+              <h2 class="is-size-3">Agriculture and Vision CVPR Workshop 2025</h2>
+              <br />
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="" target="_blank"
+                    >Laura-Sophia von Hirschhausen</a
+                  ><sup><small>1</small></sup
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="https://www.hhi.fraunhofer.de/en/departments/vit/research-groups/computer-vision-graphics/team/jannes-s-magnusson.html" target="_blank">Jannes S. Magnusson<a>
+                  <sup><small>1</small></sup
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="https://iphome.hhi.de/hilsmann/index.htm" target="_blank">Anna Hilsmann</a><sup><small>1</small></sup
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="https://iphome.hhi.de/eisert/" target="_blank">Peter Eisert</a><sup><small>1,2</small></sup>
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup><small>1 </small></sup>Fraunhofer Heinrich Hertz Institute, HHI <br />
+                  <sup><small>2 </small></sup>Humboldt University of Berlin
+                  <br />
+                  <!-- Conferance name and year -->
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <!-- LateXML rendering GitHub page -->
+
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark is-disabled">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/fraunhoferhhi/AppleGrowthVision"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- Poster link -->
+                  <!-- <span class="link-block">
+                    <a href="static/pdfs/Poster Self-Organizing Gaussians (ECCV).pdf" target="_blank" class="external-link button is-normal is-rounded is-dark is-disabled">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Poster</span>
+                    </a>
+                  </span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <video 
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="none"
+          style="max-width:100%;"
+        >
+          <source src="static/videos/lego_deconstructed_compressed.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+      </div>
+    </section> -->
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">TL;DR</h2>
+            <div class="content has-text-justified">
+              <p>
+                We present a large-scale stereo dataset of six validated apple growth stages, enabling accurate classification, 3D reconstruction, and improved fruit detection and with growth stage prediction of over 95% accuracy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-4">Contributions</h2>
+            <div class="content has-text-justified">
+              <!-- <ol>
+                <li>
+                  We
+                  <strong>propose a novel compact scene representation and training concept for 3DGS</strong>, structuring the high-dimensional features in a
+                  <strong>smooth 2D grid</strong>, which can be efficiently encoded using state-of-the-art compression methods.
+                </li>
+                <li>
+                  We
+                  <strong>introduce an efficient 2D sorting algorithm called Parallel Linear Assignment Sorting (PLAS)</strong>
+                  that sorts millions of 3DGS parameters on the GPU in seconds.
+                </li>
+                <li>
+                  We provide a simple to use interface for compressing and decompressing the resulting 3D scenes. The decompressed reconstructions share the
+                  structure of 3DGS, allowing integration into established renderers.
+                </li>
+                <li>
+                  We efficiently
+                  <strong>reduce the storage size by a factor of 19.9x to 39.5x</strong>
+                  while maintaining high visual quality.
+                </li>
+              </ol> -->
+            </div>
+
+            <h2 class="title is-4">Key Insight</h2>
+            <div class="content has-text-justified">
+              <!-- <p>
+                The goal of compressing 3DGS scenes is to provide a compact representation that can be rendered into the training &amp; test views, without
+                losing visual detail. We are <i>not</i> bound to a specific configuration of Gaussian splats: we can mold the splats during training to be
+                well-compressible. We leverage this to enforce neighboring splats to share attributes, e.g. neighbors in xyz sharing the same rotation values.
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser video-->
+    <!-- <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img style="display: block; margin-left: auto; margin-right: auto; width: 70%" src="static/images/teaser.png" alt="MY ALT TEXT" />
+          <p></p>
+        </div>
+      </div>
+    </section> -->
+    <!-- End teaser video -->
+
+
+    <!-- <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <!-- Video Presentation Section -- >
+          <h2 class="title is-3 has-text-centered">In-Depth Talk</h2>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-centered mb-4">
+                <p>
+                  A 30-minute talk about Self-Organizing Gaussians given at the 
+                  <a href="https://voxel51.com/resources/lp/eccv-redux-series/" class="has-text-link">ECCV 2024 Redux Series</a> 
+                  at Voxel51.
+                </p>
+              </div>
+              
+              <div class="publication-video">
+                <!-- YouTube embed code here -- >
+                <iframe
+                  src="https://www.youtube.com/embed/nb5U9xfx7-w"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+              <!-- Contents with Timestamp Links -- >
+              <div class="content has-text-left mt-5">
+                <h3 class="title is-4">Contents</h3>
+                <ul>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=nb5U9xfx7-w&t=0s" target="_blank" class="has-text-link">
+                      Introduction to 3D Gaussian Splatting and its attributes (0:00–10:00)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=nb5U9xfx7-w&t=620s" target="_blank" class="has-text-link">
+                      Common Strategies for 3DGS Compression (10:00–15:00)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/watch?v=nb5U9xfx7-w&t=935s" target="_blank" class="has-text-link">
+                      Self-Organizing Gaussians and Parallel Linear Assignment Sorting (15:00 onwards)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End YouTube video section -->
+    
+  
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Deep learning has transformed computer vision for precision agriculture, yet apple orchard monitoring remains limited by dataset constraints. The lack of diverse, realistic datasets and the difficulty of annotating dense, heterogeneous scenes. Existing datasets overlook different growth stages and stereo imagery, both essential for realistic 3D modeling of orchards and tasks like fruit localization, yield estimation, and structural analysis. To address these gaps, we present AppleGrowthVision, a large-scale dataset comprising two subsets. The first includes 9,317 high resolution stereo images collected from a farm in Brandenburg (Germany), covering six agriculturally validated growth stages over a full growth cycle. The second subset consists of 777 densely annotated images from the same farm in Brandenburg and one in Pillnitz (Germany), containing a total of 21.934 apple labels. AppleGrowthVision provides stereo-image data with agriculturally validated growth stages, enabling precise phenological analysis and 3D reconstructions. Extending MinneApple with our data improves YOLOv8 performance by 5 % in terms of F1-score, while adding it to MinneApple and MAD boosts Faster R-CNN F1-score by 28 %. Additionally, six BBCH stages were predicted with over 95 % accuracy using VGG16, ResNet152, DenseNet201, and MobileNetv2. AppleGrowthVision bridges the gap between agricultural science and computer vision, by enabling the development of robust models for fruit detection, growth modeling, and 3D analysis in precision agriculture. Future work includes improving annotation, enhancing 3D reconstruction, and extending multimodal analysis across all growth stages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Method</h2>
+            <div class="content has-text-justified">
+              <p>
+                An overview of our novel 3DGS training method. During training, we arrange all high dimensional attributes into multiple 2D grids. Those grids
+                are sorted and a smoothness regularization is applied. This creates redundancy which help to compress the 2D grids into small files using
+                off-the-shelf compression methods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <img src="static/images/method.png" alt="MY ALT TEXT" />
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3 has-text-centered">Results</h2>
+    
+              <div class="content has-text-justified">
+                <p>
+                  Find interactive comparisons on the <a href="results.html" class="has-text-link">Results</a> page.
+                </p>
+              </div>
+    
+              <!-- Add the clickable image here -->
+              <a href="results.html">
+                <figure class="image" style="width: 70%; margin: 0 auto;">
+                  <img src="static/images/Truck_Results.png" alt="Results Preview">
+                </figure>
+              </a>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Comparison with other 3D scene representations</h2>
+            <div class="content has-text-justified">
+              <div class="content has-text-justified">
+                <strong>Quantitative results:</strong> Our method significantly outperforms the default 3D Gaussian Splatting (3DGS) and prior NeRF-based 3D
+                reconstruction methods in terms of storage size and rendering efficiency. We achieve a <b>reduction in storage size</b> by a factor of
+                <b>19.9x to 39.5x</b>, depending on the dataset, with the most notable reduction being on the Deep Blending dataset. Training our method with
+                spherical harmonics (SH) deactivated yields a reduction factor of 36x to 123x over vanilla 3DGS with a slight reduction in PSNR. Our approach maintains
+                competitive visual quality metrics (PSNR and L-PIPS) compared to Mip-NeRF360 and VQ-TensoRF but allows for real-time rendering and significantly
+                faster training, approximately 10 to 30 minutes per scene. Additionally, our optimized method renders scenes more quickly, achieving 515 fps
+                compared to 385 fps for the vanilla 'Truck' dataset model on the same GPU, while also displaying better visual quality, compared to vanilla
+                3DGS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div class="content has-text-justified">
+            <img style="display: block; margin-left: auto; margin-right: auto; width: 90%" src="static/images/table.png" alt="MY ALT TEXT" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <!-- Video Presentation Section -- >
+          <h2 class="title is-3 has-text-centered">View Dependent Podcast</h2>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-centered mb-4">
+                <p>
+                  An hour-long conversation with <a href="https://radiancefields.com" class="has-text-link">Michael Rubloff</a> and <a href="https://x.com/janusch_patas" class="has-text-link">MrNeRF</a> in the View Dependent Podcast about 3DGS compression, why the Gaussians are Self-Organizing, and how this project came to be. 
+                </p>
+              </div>
+              
+              <div class="publication-video">
+                <iframe
+                  src="https://www.youtube.com/embed/Y0O6R0Keywg"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen>
+                </iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Comparison with other 3DGS compression methods</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                Multiple concurrent methods have been developed for compressing 3D Gaussian splats. Commonly, these methods aim to reduce the number of
+                Gaussians needed for the scene and apply quantized vector compression. Unlike other approaches that utilize codebooks or hash grids for vector
+                coding, our method is unique in organizing the Gaussians into locally smooth 2D grids during training.
+              </p>
+              <p>
+                This grid organization during training enables the use of standard image compression techniques to code the attributes. This simplifies
+                decoding: one <b>simply decompresses</b> the grid attribute images and applies a rescaling. Each pixel from the coded images then corresponds to
+                a set of Gaussian splatting attributes, which can be rendered with any standard 3DGS render engine.
+              </p>
+              <p>
+                As of July 2024, <b>our method</b> (<i>Morgenstern et al.</i>) achieves the <b>highest quality</b> for the compared datasets,
+                <b>second only in size</b> to the
+                <a href="https://yihangchen-ee.github.io/project_hac/">HAC</a>
+                method, also presented at ECCV 2024.
+              </p>
+              <p>We invite you to explore other methods for compressing Gaussian splats and compare their approaches in this survey:</p>
+            </div>
+
+            <div class="columns">
+              <div class="column is-one-third">
+                <img src="static/images/survey-teaser.png" alt="" />
+              </div>
+              <div class="column is-two-thirds has-text-justified">
+                <span class="link-block">
+                  <a href="https://survey.3dgs.zip/" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-chart-line"></i>
+                    </span>
+                    <span>Survey Page</span>
+                  </a>
+                  <a href="https://github.com/w-m/3dgs-compression-survey" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Survey Code & Data</span>
+                  </a>
+                </span>
+                <div>
+                  <b>3dgs.zip: A survey on 3D Gaussian Splatting Compression Methods</b>: We're collecting results and info on methods that reduce the storage
+                  size of 3D Gaussian splatting scenes. Contributions welcome!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title">BibTeX</h2>
+            <p>If you use our method in your research, please cite our paper. The paper was presented at Agriculture and Vision CVPR Workshop 2025 and <a href="https://doi.org/10.1007/978-3-031-73013-9_2">published</a> in the official proceedings in 2025. You can use the following BibTeX entry:</p>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div class="container is-max-desktop">
+        <!-- <pre><code>@InProceedings{morgenstern2024compact,
+  author    = {Wieland Morgenstern and Florian Barthel and Anna Hilsmann and Peter Eisert},
+  title     = {Compact 3D Scene Representation via Self-Organizing Gaussian Grids},
+  booktitle = {Computer Vision -- {ECCV} 2024},
+  year      = {2025},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {18--34},
+  doi       = {10.1007/978-3-031-73013-9_2},
+  url       = {https://fraunhoferhhi.github.io/Self-Organizing-Gaussians/},
+}</code></pre> -->
+      </div>
+    </section>
+
+    <!--End BibTex citation -->
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. <br />
+                This website is licensed under a
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+                  >Creative Commons Attribution-ShareAlike 4.0 International License</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+  </body>
+</html>
