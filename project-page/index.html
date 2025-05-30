@@ -238,20 +238,45 @@
               </p> 
             </div> 
             -->
-            <h2 class="title is-4">Remaining challenges</h2>
-            <div class="content has-text-justified"></div>
-            <div>
-               <p>
-                ...
-                <!-- 
-                With improved annotation, the paper may establish a robust baseline for object detection in complex orchard scenes, growth stage classification using deep neural networks, 
-                and 3D scene reconstruction in agricultural environments. It also highlights key areas for future development, including the need for finer-grained 
-                annotation of secondary BBCH stages, benchmarking of lightweight and transformer-based models, and the integration of RGB, multispectral, and depth 
-                data to enhance detection, classification, and phenological analysis.
-                -->
-               </p>
+           <h2 class="title is-4">Remaining challenges</h2>
+            <div class="content has-text-justified">
+              <ol>
+                <li>
+                <strong>Incomplete Annotation of Growth Stages:</strong> While the dataset includes expert-validated BBCH growth stages, annotations are currently 
+                limited to primary stages. Many agricultural decisions (e.g., fungicide application, precise yield estimation, optimal harvest timing) require 
+                fine-grained annotations of secondary BBCH stages, which are not yet comprehensively labeled in the dataset.
+                </li>
+                <li>
+                <strong>Limitations in Automatic Labeling:</strong> The semi-automated annotation approach used (AI-assisted YOLOv8 with human verification) 
+                is a step forward but still insufficient for reliable, fully automated crop monitoring and large-scale yield prediction. Enhancing the accuracy 
+                and consistency of automatic annotation tools remains a critical challenge.
+                </li>
+                <li>
+                <strong>Reconstruction in Complex Environments:</strong> Although the paper presents a novel reconstruction pipeline for large orchard scenes, 
+                traditional 3D reconstruction tools like COLMAP struggle in these environments due to dense vegetation, occlusion, and wind-induced motion. 
+                The current pipeline relies on manual calibration inputs and is not yet fully robust or scalable for all conditions.
+                </li>
+                <li>
+                <strong>Handling Occlusions and Dense Clusters:</strong> Fruit detection in highly occluded and densely clustered scenes remains a challenge. 
+                Models still face difficulty distinguishing overlapping fruits and dealing with variable lighting and scale changes, especially in real-world orchard settings.
+                </li>
+                <li>
+                <strong>Real-Time Inference and Model Efficiency:</strong> The models evaluated, including YOLOv8 and Faster R-CNN, show promising accuracy 
+                but may not be optimized for real-time inference on edge devices used in agricultural robotics. Further testing with lightweight models 
+                (e.g., YOLO-NAS, MobileNetV3, EfficientDet) is necessary for deployment in constrained environments.
+                </li>
+                <li>
+                <strong>Multimodal Data Integration:</strong> The dataset currently focuses on stereo RGB imagery. However, integrating additional data
+                modalities such as multispectral, thermal, or LiDAR could significantly improve robustness and utility for broader phenotyping tasks, which 
+                is not yet explored in this work.
+                </li>
+                <li>
+                <strong>Benchmarking with Advanced Architectures:</strong> The study primarily evaluates CNN-based models and does not include transformer-based 
+                architectures like DETR or Vision Transformers, which may offer better performance in capturing complex spatial relationships and occlusions in 
+                orchard imagery.
+                </li>
+              </ol>            
             </div>
-
           </div>
         </div>
       </div>
