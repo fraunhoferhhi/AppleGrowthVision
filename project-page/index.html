@@ -212,15 +212,6 @@
               </ol>
             </div>
 
-            <h2 class="title is-4">Key Insight</h2>
-            <div class="content has-text-justified">
-              <p>
-                The goal of compressing 3DGS scenes is to provide a compact representation that can be rendered into the training &amp; test views, without
-                losing visual detail. We are <i>not</i> bound to a specific configuration of Gaussian splats: we can mold the splats during training to be
-                well-compressible. We leverage this to enforce neighboring splats to share attributes, e.g. neighbors in xyz sharing the same rotation values.
-              </p> 
-            </div> 
-            -->
            <h2 class="title is-4">Remaining challenges</h2>
             <div class="content has-text-justified">
               <ol>
@@ -332,7 +323,7 @@
     </section> -->
     <!-- End YouTube video section -->
     
-  
+   <!-- Abstract -->   
     <section class="section hero is-light">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -347,180 +338,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="section hero is-small">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Method</h2>
-            <div class="content has-text-justified">
-              <p>
-                An overview of our novel 3DGS training method. During training, we arrange all high dimensional attributes into multiple 2D grids. Those grids
-                are sorted and a smoothness regularization is applied. This creates redundancy which help to compress the 2D grids into small files using
-                off-the-shelf compression methods.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <img src="static/images/method.png" alt="MY ALT TEXT" />
-        </div>
-      </div>
-    </section>
-
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3 has-text-centered">Results</h2>
-    
-              <div class="content has-text-justified">
-                <p>
-                  Find interactive comparisons on the <a href="results.html" class="has-text-link">Results</a> page.
-                </p>
-              </div>
-    
-              <!-- Add the clickable image here 
-              <a href="results.html">
-                <figure class="image" style="width: 70%; margin: 0 auto;">
-                  <img src="static/images/Truck_Results.png" alt="Results Preview">
-                </figure>
-              </a>
-              -->
-    
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-  <!-- 
-    <section class="section hero is-small">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Comparison with other 3D scene representations</h2>
-            <div class="content has-text-justified">
-              <div class="content has-text-justified">
-                <strong>Quantitative results:</strong> Our method significantly outperforms the default 3D Gaussian Splatting (3DGS) and prior NeRF-based 3D
-                reconstruction methods in terms of storage size and rendering efficiency. We achieve a <b>reduction in storage size</b> by a factor of
-                <b>19.9x to 39.5x</b>, depending on the dataset, with the most notable reduction being on the Deep Blending dataset. Training our method with
-                spherical harmonics (SH) deactivated yields a reduction factor of 36x to 123x over vanilla 3DGS with a slight reduction in PSNR. Our approach maintains
-                competitive visual quality metrics (PSNR and L-PIPS) compared to Mip-NeRF360 and VQ-TensoRF but allows for real-time rendering and significantly
-                faster training, approximately 10 to 30 minutes per scene. Additionally, our optimized method renders scenes more quickly, achieving 515 fps
-                compared to 385 fps for the vanilla 'Truck' dataset model on the same GPU, while also displaying better visual quality, compared to vanilla
-                3DGS.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-    
-    <!--
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div class="content has-text-justified">
-            <img style="display: block; margin-left: auto; margin-right: auto; width: 90%" src="static/images/table.png" alt="MY ALT TEXT" />
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <!-- <section class="hero is-small is-light">
-      <div class="hero-body">
-        <div class="container">
-          <!-- Video Presentation Section -- >
-          <h2 class="title is-3 has-text-centered">View Dependent Podcast</h2>
-          <div class="columns is-centered">
-            <div class="column is-four-fifths">
-              <div class="content has-text-centered mb-4">
-                <p>
-                  An hour-long conversation with <a href="https://radiancefields.com" class="has-text-link">Michael Rubloff</a> and <a href="https://x.com/janusch_patas" class="has-text-link">MrNeRF</a> in the View Dependent Podcast about 3DGS compression, why the Gaussians are Self-Organizing, and how this project came to be. 
-                </p>
-              </div>
-              
-              <div class="publication-video">
-                <iframe
-                  src="https://www.youtube.com/embed/Y0O6R0Keywg"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen>
-                </iframe>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section hero is-small">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Comparison with other 3DGS compression methods</h2>
-
-            <div class="content has-text-justified">
-              <p>
-                Multiple concurrent methods have been developed for compressing 3D Gaussian splats. Commonly, these methods aim to reduce the number of
-                Gaussians needed for the scene and apply quantized vector compression. Unlike other approaches that utilize codebooks or hash grids for vector
-                coding, our method is unique in organizing the Gaussians into locally smooth 2D grids during training.
-              </p>
-              <p>
-                This grid organization during training enables the use of standard image compression techniques to code the attributes. This simplifies
-                decoding: one <b>simply decompresses</b> the grid attribute images and applies a rescaling. Each pixel from the coded images then corresponds to
-                a set of Gaussian splatting attributes, which can be rendered with any standard 3DGS render engine.
-              </p>
-              <p>
-                As of July 2024, <b>our method</b> (<i>Morgenstern et al.</i>) achieves the <b>highest quality</b> for the compared datasets,
-                <b>second only in size</b> to the
-                <a href="https://yihangchen-ee.github.io/project_hac/">HAC</a>
-                method, also presented at ECCV 2024.
-              </p>
-              <p>We invite you to explore other methods for compressing Gaussian splats and compare their approaches in this survey:</p>
-            </div>
-
-            <div class="columns">
-              <div class="column is-one-third">
-                <img src="static/images/survey-teaser.png" alt="" />
-              </div>
-              <div class="column is-two-thirds has-text-justified">
-                <span class="link-block">
-                  <a href="https://survey.3dgs.zip/" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-chart-line"></i>
-                    </span>
-                    <span>Survey Page</span>
-                  </a>
-                  <a href="https://github.com/w-m/3dgs-compression-survey" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Survey Code & Data</span>
-                  </a>
-                </span>
-                <div>
-                  <b>3dgs.zip: A survey on 3D Gaussian Splatting Compression Methods</b>: We're collecting results and info on methods that reduce the storage
-                  size of 3D Gaussian splatting scenes. Contributions welcome!
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!--BibTex citation -->
     <section class="section" id="BibTeX">
