@@ -16,7 +16,7 @@ python prepare_bbch.py -p <path to directory "AppleGrowthVision"> -o <path to di
 
 ## Stereo Reconstruction
 
-The script `calib_conv.py` provides a function `read_calib(date)` to retrieve the calibration parameters for a given capture date. It returns the parameters in openCV format for each camera (L, R).
+The script `calib_conversion.py` provides a function `convert_xml_to_cameras(path)` to retrieve the calibration parameters for a given capture date. It returns the parameters in openCV format for each camera (L, R).
 
 ## Dataset
 
