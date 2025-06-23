@@ -1,4 +1,3 @@
-
 # AppleGrowthVision
 
 Large-scale heterogeneous apple tree data for BBCH classification, Apple Detection, and 3D reconstruction of orchards with sparse data.
@@ -32,7 +31,6 @@ The dataset consists of two subsets that have different modalities. `Brandenburg
     - L_*.jpg
     - R_*.jpg
   - annotations.json
-
 ```
 
 The brandenburg data has a directory `calib` which contains all calibration parameters per capture date. It might be converted using `calib_conv.py`.
@@ -82,7 +80,12 @@ The directory `2024_counted_trees` contains human annotations for 10 trees with 
 If the provided data is used or any of the provided scripts, please cite:
 
 ```
-{
-
+@InProceedings{von_Hirschhausen_2025_CVPR,
+    author    = {von Hirschhausen, Laura-Sophia and Magnusson, Jannes S. and Kovalenko, Mykyta and Boye, Fredrik and Rawat, Tanay and Eisert, Peter and Hilsmann, Anna and Pretzsch, Sebastian and Bosse, Sebastian},
+    title     = {AppleGrowthVision: A large-scale stereo dataset for phenological analysis, fruit detection, and 3D reconstruction in apple orchards},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR) Workshops},
+    month     = {June},
+    year      = {2025},
+    pages     = {5443-5450}
 }
 ```
